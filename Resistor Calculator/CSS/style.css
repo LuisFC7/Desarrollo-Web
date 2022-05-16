@@ -1,0 +1,58 @@
+:root{
+    --0:#000000;
+    --1:#A97212;
+    --2:#E80F0F;
+    --3:#FF8300;
+    --4:#FFE803;
+    --5:#46FF00;
+    --6:#0051FF;
+    --7:#9B00FF;
+    --8:#B0B5BB;
+    --9: #ffffff;
+    --fondo:#EFECB9;
+    --fuente: 'Karla', sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--fondo);
+}
+
+.valor0{background-color: var(--0); height: 5rem;}
+.valor1{background-color: var(--1);}
+.valor2{background-color: var(--2);}
+.valor3{background-color: var(--3);}
+.valor4{background-color: var(--4);}
+.valor5{background-color: var(--5);}
+.valor6{background-color: var(--6);}
+.valor7{background-color: var(--7);}
+.valor8{background-color: var(--8);}
+.valor9{background-color: var(--9);}
+
+h1{
+    font-size: normal;
+    font-weight: 5rem;
+    font-family: var(--fuente);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+    align-items: center;
+}
+
+.forms{
+    border-radius: 1.5rem;
+    text-align: center;
+    width: 15rem;
+    height: 5rem;
+}

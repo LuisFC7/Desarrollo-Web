@@ -7,24 +7,71 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preload" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <script src="algoritmos.js"></script>
     <title>Resistor Calc</title>
 </head>
 <body>
-    <header>Calculadora de Resistencias.</header>
-    <div>
+        <h1>Calculdora de Resistencias</h1>
         <div>
-            <h1>Selecciona los colores de resistencia a verificar</h1>
+            <div class="contenedor">
+                <div class="campo1">
+                    <form action="">
+                        <select class="forms" id="color1">
+                            <option disabled selected>--Selecciona el valor</option>
+                            <option class="valor1" value="1">1</option>
+                            <option class="valor2" value="2">2</option>
+                            <option class="valor3" value="3">3</option>
+                            <option class="valor4" value="4">4</option>
+                            <option class="valor5" value="5">5</option>
+                            <option class="valor6" value="6">6</option>
+                            <option class="valor7" value="7">7</option>
+                            <option class="valor8" value="8">8</option>
+                            <option class="valor9" value="9">9</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="campo2">
+                    <form action="">
+                        <select name="" id="color2">
+                            <option disabled selected>--Selecciona el valor</option>
+                            <option class="valor0" value="0">0</option>
+                            <option class="valor1" value="1">1</option>
+                            <option class="valor2" value="2">2</option>
+                            <option class="valor3" value="3">3</option>
+                            <option class="valor4" value="4">4</option>
+                            <option class="valor5" value="5">5</option>
+                            <option class="valor6" value="6">6</option>
+                            <option class="valor7" value="7">7</option>
+                            <option class="valor8" value="8">8</option>
+                            <option class="valor9" value="9">9</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="campo3">
+                    <form action="">
+                        <select name="" id="color3">
+                            <option disabled selected>--Selecciona el valor</option>
+                            <option class="valor0" value="1">0</option>
+                            <option class="valor1" value="10">1</option>
+                            <option class="valor2" value="100">2</option>
+                            <option class="valor3" value="1000">3</option>
+                            <option class="valor4" value="10000">4</option>
+                            <option class="valor5" value="100000">5</option>
+                            <option class="valor6" value="1000000">6</option>
+                            <option class="valor7" value="10000000">7</option>
+                            <option class="valor8" value="100000000">8</option>
+                            <option class="valor9" value="1000000000">9</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div>
-            <input type="color" value="color1" id="color1"> 
-            <input type="color" value="color2" id="color2"> 
-            <input type="color" value="color3" id="color3"> 
-            <input type="color" value="color4" id="color4">
-            <input type="button" value="valor" onclick="valor();"> 
-            <input type="button" value="valor2" onclick="prueba();">
-        </div>
-    </div>
+
+        <input type="button" onclick="valor();">
+        <label id="prueba"></label>
     
 </body>
 </html>
