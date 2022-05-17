@@ -12,7 +12,7 @@
     <title>Resistor Calc</title>
 </head>
 <body>
-        <h1>Calculdora de Resistencias</h1>
+        <h1>Calculadora de Resistencias</h1>
         <div>
             <div class="contenedor">
                 <div class="campo1">
@@ -34,7 +34,7 @@
 
                 <div class="campo2">
                     <form action="">
-                        <select name="" id="color2">
+                        <select class="forms" id="color2">
                             <option disabled selected>--Selecciona el valor</option>
                             <option class="valor0" value="0">0</option>
                             <option class="valor1" value="1">1</option>
@@ -52,7 +52,7 @@
 
                 <div class="campo3">
                     <form action="">
-                        <select name="" id="color3">
+                        <select class="forms" id="color3">
                             <option disabled selected>--Selecciona el valor</option>
                             <option class="valor0" value="1">0</option>
                             <option class="valor1" value="10">1</option>
@@ -67,11 +67,33 @@
                         </select>
                     </form>
                 </div>
+                <div class="campo4">
+                    <form action="">
+                        <select class="forms" id="color4">
+                            <option disabled selected>--Selecciona el valor</option>"></option>
+                            <option class="valor1" value="1">1%</option>
+                            <option class="valor2" value="2">2%</option>
+                            <option class="valor3" value="0.05">0.05%</option>
+                            <option class="valor4" value="0.02">0.02%</option>
+                            <option class="valor5" value="0.5">0.5%</option>
+                            <option class="valor6" value="0.25">0.25%</option>
+                            <option class="valor7" value="0.1">0.1%</option>
+                            <option class="valor8" value="0.01">0.01%</option>
+                            <option class="plata" value="5">5%</option>
+                            <option class="oro" value="10">10%</option>
+                            <option class="" value="20">20%</option>
+                        </select>
+                    </form>
+                </div>
             </div>
         </div>
 
         <input type="button" onclick="valor();">
-        <label id="prueba"></label>
+        <div>
+            <label id="resultado"></label>
+            <label id="tolerancia">±</label>
+        </div>
+        
     
 </body>
 </html>

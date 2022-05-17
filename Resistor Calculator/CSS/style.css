@@ -9,6 +9,8 @@
     --7:#9B00FF;
     --8:#B0B5BB;
     --9: #ffffff;
+    --silver: #C0C0C0;
+    --gold:#D4AF37;
     --fondo:#EFECB9;
     --fuente: 'Karla', sans-serif;
 
@@ -36,6 +38,8 @@ body{
 .valor7{background-color: var(--7);}
 .valor8{background-color: var(--8);}
 .valor9{background-color: var(--9);}
+.plata{background-color: var(--silver);}
+.oro{background-color: var(--gold);}
 
 h1{
     font-size: normal;
