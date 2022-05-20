@@ -15,7 +15,6 @@
     --fuente: 'Karla', sans-serif;
     --fuente2: 'PT Sans', sans-serif;
     --fboton: 'Hind Siliguri', sans-serif;
-
 }
 
 html {
@@ -81,4 +80,26 @@ body{
     background-color:var(--0);
     height: 5rem;
     width: 12rem;
+}
+
+.bandas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--0);
+}
+
+.bandas__a{
+    border: solid 1px var(--0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fuente);
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.bandas__a:hover{
+    font-size: 3rem;
+    color: var(--2);
 }

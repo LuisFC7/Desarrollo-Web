@@ -81,21 +81,76 @@ function fivebands(){
     let va3=parseInt(document.getElementById('color3').value);
     let va4=parseInt(document.getElementById('color4').value);
     let va5=document.getElementById('color5').value;
-    let conca=((va1*100)+(va2*10)+(va1));
+    let conca=((va1*100)+(va2*10))+va3;
     let result=0;
     let fin=0;
 
     if(va1==404 || va2==404 || va3==404 || va4==404 || va5==404){
         alert('Debe seleccionar todos los valores.');    
     }
-    console.log(conca);
 
     switch(va4){
         case 1:
             result=conca*1;
             fin="Valor de Resistencia: " +result+ "Ω    ±" +va5;
-            alert(fin);
         break;
 
+        case 10:
+            result=(conca*10)/1000;
+            fin="Valor de Resistencia: " +result+ "kΩ    ±" +va5;
+        break;
+
+        case 100:
+            result=(conca*100)/1000;
+            fin="Valor de Resistencia: " +result+ "kΩ    ±" +va5;
+        break;
+
+        case 1000:
+            result=(conca*1000)/1000;
+            fin="Valor de Resistencia: " +result+ "kΩ    ±" +va5;
+        break;
+
+        case 10000:
+            result=(conca*10000)/1000000;
+            fin="Valor de Resistencia: " +result+ "MΩ    ±" +va5;
+        break;
+
+        case 100000:
+            result=(conca*100000)/1000000;
+            fin="Valor de Resistencia: " +result+ "MΩ    ±" +va5;
+        break;
+
+        case 1000000:
+            result=(conca*1000000)/1000000;
+            fin="Valor de Resistencia: " +result+ "MΩ    ±" +va5;
+        break;
+
+        case 10000000:
+            result=(conca*1000000)/100000000;
+            fin="Valor de Resistencia: " +result+ "GΩ    ±" +va5;
+        break;
+
+        case 100000000:
+            result=(conca*10000000)/100000000;
+            fin="Valor de Resistencia: " +result+ "GΩ    ±" +va5;
+        break;
+
+        case 1000000000:
+            result=(conca*100000000)/100000000;
+            fin="Valor de Resistencia: " +result+ "GΩ    ±" +va5;
+        break;
+
+        case 11:
+            result=(((va1*100)+(va2*10))+va3)/10;
+            fin="Valor de Resistencia: " +result+ "Ω    ±" +va5;
+        break;
+
+        case 12:
+            result=(((va1*100)+(va2*10))+va3)/100;
+            fin="Valor de Resistencia: " +result+ "Ω    ±" +va5;
+        break;
     }
+    result=document.getElementById('resultado');
+    result.innerHTML=fin;
+
 }
