@@ -29,7 +29,7 @@ body{
     background-color: var(--fondo);
 }
 
-.valor0{background-color: var(--0); height: 5rem;}
+.valor0{background-color: var(--0); height: 5rem; color: var(--9);}
 .valor1{background-color: var(--1);}
 .valor2{background-color: var(--2);}
 .valor3{background-color: var(--3);}
@@ -61,7 +61,7 @@ body{
     width: 15rem;
     height: 5rem;
     font-family: var(--fboton);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .resultado{
@@ -97,6 +97,10 @@ body{
     font-family: var(--fuente);
     font-size: 2rem;
     margin-top: 1rem;
+    padding:1rem;
+    appearance: none;
+    color: var(--0);
+
 }
 
 .bandas__a:hover{
