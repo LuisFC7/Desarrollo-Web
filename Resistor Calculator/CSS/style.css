@@ -91,7 +91,7 @@ body{
 }
 
 .bandas__a{
-    border: solid 1px var(--0);
+    border: solid 5px var(--0);
     text-decoration: none;
     text-transform: uppercase;
     font-family: var(--fuente);
@@ -104,6 +104,13 @@ body{
 }
 
 .bandas__a:hover{
-    font-size: 3rem;
-    color: var(--2);
+    color:var(--8);
 }
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
