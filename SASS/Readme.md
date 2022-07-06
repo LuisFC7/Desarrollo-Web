@@ -1,5 +1,2 @@
 # Project made using SASS for WEB Development.
-
-
-
-![SASS2](https://user-images.githubusercontent.com/55300309/177654089-7f52bc01-1bbb-4db7-a308-39e643ac671a.jpg)
+![SASS (1)](https://user-images.githubusercontent.com/55300309/177654405-18f6872f-5f8f-4978-be9a-7d9c0524786f.png)
